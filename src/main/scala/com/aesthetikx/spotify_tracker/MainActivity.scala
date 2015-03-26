@@ -6,6 +6,7 @@ import android.os.Bundle
 class MainActivity extends Activity {
 
   override def onCreate(savedInstanceState: Bundle) {
+    super.onCreate(savedInstanceState)
 
   }
 
