@@ -21,7 +21,8 @@ class SongReceiver extends BroadcastReceiver {
     if (prefs.getString("last_id", "") != trackId) {
       Log.d("SpotifyTracker", "New song: " + trackName)
 
-      val line = trackId +
+      val line = System.currentTimeMillis() +
+        " --- " + trackId +
         " --- " + artistName +
         " --- " + albumName +
         " --- " + trackName
